@@ -151,7 +151,7 @@ header nav a {
   font-size: 1.5rem;
 }
 header nav :hover {
-  color: green;
+  color: #F2AD94;
 }
 #intro {
   background-image: url("../img/background_top.jpg");
@@ -168,10 +168,24 @@ header nav :hover {
 }
 #intro h1 {
   font-size: 2rem;
+  padding-bottom: 25%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  #intro h1 {
+    padding-bottom: 5%;
+  }
 }
 #intro p {
   font-size: 2rem;
-  margin: 0 10%;
+  margin: 0 20%;
+}
+@media (max-width: 500px) {
+  #intro p {
+    margin: 0 5%;
+  }
 }
 #skills {
   background-color: #e6f2f2;
@@ -182,17 +196,27 @@ header nav :hover {
   text-align: center;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #skills {
+    flex-wrap: wrap;
+  }
+}
 #skills .item {
   margin: 2%;
-  background-color: #abbd93;
+  background-color: #F2AD94;
   padding: 10%;
 }
 #skills .item p {
   font-size: 4rem;
 }
 #work-history {
-  background-color: #ebffed;
+  background-color: #e6f2f2;
   height: 60vh;
+}
+@media (max-width: 500px) {
+  #work-history {
+    height: 80vh;
+  }
 }
 #work-history h2 {
   font-size: 3rem;
@@ -208,8 +232,18 @@ header nav :hover {
   text-align: center;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #work-history .items {
+    flex-wrap: wrap;
+  }
+}
 #work-history .items .item {
   margin: 0 5%;
+}
+@media (max-width: 500px) {
+  #work-history .items .item {
+    padding: 2% 0;
+  }
 }
 #work-history .items h3 {
   font-size: 2rem;
@@ -234,7 +268,7 @@ input[type=submit] {
   border: 2px solid #333;
   cursor: pointer;
   color: #000;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 8px 18px;
 }
 input[type=submit]:hover {
@@ -243,5 +277,15 @@ input[type=submit]:hover {
   transition: 0.5s;
 }
 .form-container {
+  font-size: 1rem;
   padding: 20px;
+}
+footer {
+  background-color: #3B668C;
+  padding: 3% 0;
+}
+footer p {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
 }

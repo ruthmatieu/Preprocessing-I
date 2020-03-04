@@ -90,7 +90,7 @@ header {
 			font-size: 1.5rem;
 		}
 		:hover {
-			color: green;
+			color: #F2AD94;
 		}
 	}
 }
@@ -105,10 +105,20 @@ header {
 	.column-align();
 	h1 {
 		font-size: @font-size;
+		padding-bottom: 25%;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 3rem;
+		@media (max-width: 500px) {
+			padding-bottom: 5%;
+		}
 	}
 	p {
 		font-size: @font-size;
-		margin: 0 10%;
+		margin: 0 20%;
+		@media (max-width: 500px) {
+			margin: 0 5%;
+		}
 	}
 }
 
@@ -116,9 +126,12 @@ header {
 	background-color: #e6f2f2;
 	height: 60vh;
 	.row-align();
+	@media (max-width: 500px) {
+		flex-wrap: wrap;
+	}
 	.item {
 		margin: 2%;
-		background-color: #abbd93;
+		background-color: #F2AD94;
 		padding: 10%;
 		p{
 			font-size: 4rem;
@@ -127,8 +140,11 @@ header {
 }
 
 #work-history{
-	background-color: #ebffed;
+	background-color: #e6f2f2;
 	height: 60vh;
+	@media (max-width: 500px) {
+		height: 80vh;
+	}
 	h2{
 		font-size: 3rem;
 		text-align: center;
@@ -138,8 +154,14 @@ header {
 	.items {
 		margin: 5%;
 		.row-align();
+		@media (max-width: 500px) {
+			flex-wrap: wrap;
+		}
 		.item {
 			margin: 0 5%;
+			@media (max-width: 500px) {
+				padding: 2% 0;
+			}
 		}
 		h3{
 			font-size: @font-size;
@@ -166,7 +188,7 @@ input[type=submit] {
 	border: 2px solid #333;
 	cursor: pointer;
 	color: #000;
-	font-size: 15px;
+	font-size: 1rem;
 	padding: 8px 18px;
 }
 
@@ -177,5 +199,16 @@ input[type=submit]:hover {
 }
 
 .form-container {
+	font-size: 1rem;
   padding: 20px;
+}
+
+footer {
+	background-color: #3B668C;
+	padding: 3% 0;
+	p {
+		text-align: center;
+		font-size: @font-size;
+		color: #fff;
+	}
 }
