@@ -59,9 +59,17 @@ html, body {
 }
 @link-color: gray;
 @font-size: 2rem;
-.columm-align() {
+.column-align() {
 	display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.row-align() {
+	display: flex;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -76,9 +84,6 @@ header {
 	nav {
 		display: flex;
 		justify-content: space-around;
-		position: fixed;
-  	top: 0;
-  	width: 100%;
 		a {
 			color: @link-color;
 			text-decoration: none;
@@ -110,7 +115,7 @@ header {
 #skills {
 	background-color: #e6f2f2;
 	height: 60vh;
-	.column-align();
+	.row-align();
 	.item {
 		margin: 2%;
 		background-color: #abbd93;
@@ -121,16 +126,26 @@ header {
 	}
 }
 
-#work-history {
-	background-color: crimson;
+#work-history{
+	background-color: #ebffed;
 	height: 60vh;
-	.column-align();
-	.item {
-		margin: 2%;
-		background-color: #abbd93;
-		padding: 10%;
+	h2{
+		font-size: 3rem;
+		text-align: center;
+		padding-top: 3%;
+		text-transform: uppercase;
+	}
+	.items {
+		margin: 5%;
+		.row-align();
+		.item {
+			margin: 0 5%;
+		}
+		h3{
+			font-size: @font-size;
+		}
 		p{
-			font-size: 4rem;
+			font-size: 1.5rem;
 		}
 	}
 }
