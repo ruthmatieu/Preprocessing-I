@@ -55,5 +55,82 @@ table {
 
 html, body {
     height: 100%;
-		color: green;
+		font-size: 62.5%;
+}
+@link-color: gray;
+@font-size: 2rem;
+.columm-align() {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.container {
+	margin: 2%;
+}
+
+header {
+	margin: 2% 0;
+	nav {
+		display: flex;
+		justify-content: space-around;
+		position: fixed;
+  	top: 0;
+  	width: 100%;
+		a {
+			color: @link-color;
+			text-decoration: none;
+			font-size: 1.5rem;
+		}
+		:hover {
+			color: green;
+		}
+	}
+}
+
+#intro {
+	background-image: url("../img/background_top.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	height: 60vh;
+	.column-align();
+	h1 {
+		font-size: @font-size;
+	}
+	p {
+		font-size: @font-size;
+		margin: 0 10%;
+	}
+}
+
+#skills {
+	background-color: #e6f2f2;
+	height: 60vh;
+	.column-align();
+	.item {
+		margin: 2%;
+		background-color: #abbd93;
+		padding: 10%;
+		p{
+			font-size: 4rem;
+		}
+	}
+}
+
+#work-history {
+	background-color: crimson;
+	height: 60vh;
+	.column-align();
+	.item {
+		margin: 2%;
+		background-color: #abbd93;
+		padding: 10%;
+		p{
+			font-size: 4rem;
+		}
+	}
 }
