@@ -1,1 +1,291 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  margin: 2%;
+}
+header {
+  margin: 2% 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+header nav :hover {
+  color: #F2AD94;
+}
+#intro {
+  background-image: url("../img/background_top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#intro h1 {
+  font-size: 2rem;
+  padding-bottom: 25%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  #intro h1 {
+    padding-bottom: 5%;
+  }
+}
+#intro p {
+  font-size: 2rem;
+  margin: 0 20%;
+}
+@media (max-width: 500px) {
+  #intro p {
+    margin: 0 5%;
+  }
+}
+#skills {
+  background-color: #e6f2f2;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  #skills {
+    flex-wrap: wrap;
+  }
+}
+#skills .item {
+  margin: 2%;
+  background-color: #F2AD94;
+  padding: 10%;
+}
+#skills .item p {
+  font-size: 4rem;
+}
+#work-history {
+  background-color: #e6f2f2;
+  height: 60vh;
+}
+@media (max-width: 500px) {
+  #work-history {
+    height: 80vh;
+  }
+}
+#work-history h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3%;
+  text-transform: uppercase;
+}
+#work-history .items {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  #work-history .items {
+    flex-wrap: wrap;
+  }
+}
+#work-history .items .item {
+  margin: 0 5%;
+}
+@media (max-width: 500px) {
+  #work-history .items .item {
+    padding: 2% 0;
+  }
+}
+#work-history .items h3 {
+  font-size: 2rem;
+}
+#work-history .items p {
+  font-size: 1.5rem;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #FFF;
+  border-radius: 10px;
+  border: 2px solid #333;
+  cursor: pointer;
+  color: #000;
+  font-size: 1rem;
+  padding: 8px 18px;
+}
+input[type=submit]:hover {
+  background-color: #000;
+  color: #FFF;
+  transition: 0.5s;
+}
+.form-container {
+  font-size: 1rem;
+  padding: 20px;
+}
+footer {
+  background-color: #3B668C;
+  padding: 3% 0;
+}
+footer p {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
